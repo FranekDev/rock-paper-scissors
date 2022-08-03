@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container__main">
+            <div class="container__description">
+                <span>Rock Paper Scissors</span>
+            </div>
+
+            <div class="container__images">
+                <div class="rock container__images-item">
+                    <img src="./images/rock.png" alt="Rock" class="playerOption">
+                </div>
+                <div class="paper container__images-item">
+                    <img src="./images/paper.png" alt="Paper" class="playerOption">
+                </div>
+                <div class="scissors container__images-item">
+                    <img src="./images/scissors.png" alt="Scissors" class="playerOption">
+                </div>
+            </div>
+                <div class="container__player-move">
+                    <span class="playerMove"></span>
+                    <span class="whoWon"></span>
+                    <span class="computerMove"></span>
+                </div>
+
+            <div class="container__scores">
+                <div class="player">
+                    Player: <span class="scoreP">-</span>
+                </div>
+                <div class="computer">
+                    Computer: <span class="scoreC">-</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span class="description">
+                Created by FranekDev
+            </span>
+            <div class="github">
+                <a href=""><img src="./images/github.png" alt="Github"></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="finished__game">
+        <div class="finished__game-title">
+            <span class="finish__message">Game Finished!<br></span>
+            <span class="txt"></span>
+        </div>
+        <div class="finished__game-btn">Play again</div>
+    </div>
+
+    
+</body>
+</html>
