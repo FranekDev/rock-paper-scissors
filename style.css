@@ -2,13 +2,8 @@
 
 :root {
     --color-bg: rgb(27, 27, 27);
-    /* --color-text: rgb(128, 241, 245); */
     --color-text: rgb(128, 245, 235);
     --color-text-nd: rgb(175, 175, 175);
-    
-    /* --color-bg: #3A3E59; */
-    /* --color-text: #F9AC66; */
-    /* --color-text-nd: rgb(175, 175, 175); */
 }
 
 * {
@@ -23,7 +18,6 @@ body {
 }
 
 .container {
-    /* display: none; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,18 +109,15 @@ body {
     border: 2px solid var(--color-text);
     cursor: pointer;
     transition: all 0.1s;
-    /* color: black; */
-    /* background: linear-gradient(90deg, rgba(9,121,121,1) 16%, rgba(10,212,231,1) 70%, rgba(21,207,166,1) 94%); */
 }
 
 .finished__game-btn:hover {
-    /* background-color: var(--color-text); */
+    background-color: var(--color-text);
     color: black;
     transform: scale(1.05);
     border: none;
     box-shadow: none;
-    /* box-shadow: 0 0 3px var(--color-text); */
-    background: linear-gradient(90deg, rgb(12, 179, 179) 4%, rgba(10,212,231,1) 92%);
+    box-shadow: 0 0 3px var(--color-text);
 }
 
 .finished__game-title {
