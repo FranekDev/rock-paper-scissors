@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@900&family=Inter:wght@300&display=swap');
+
+:root {
+    --color-bg: rgb(27, 27, 27);
+    /* --color-text: rgb(128, 241, 245); */
+    --color-text: rgb(128, 245, 235);
+    --color-text-nd: rgb(175, 175, 175);
+    
+    /* --color-bg: #3A3E59; */
+    /* --color-text: #F9AC66; */
+    /* --color-text-nd: rgb(175, 175, 175); */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg);
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+.container__description {
+    color: var(--color-text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.container__images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container__images img {
+    width: 100px;
+    height: 100px;
+    transition: all 0.1s;
+}
+
+.container__images img:hover {
+    transform: scale(1.1);
+}
+
+.container__images-item {
+    cursor: pointer;
+}
+.container__scores {
+    display: flex;
+    color: var(--color-text-nd);
+    justify-content: space-between;
+    width: 300px;
+}
+
+.player, .computer {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 15px;
+    padding: 6px 12px;
+    border-bottom: 2px solid var(--color-text);
+}
+
+.container__player-move {
+    color: var(--color-text-nd);
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.whoWon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.finished__game {
+    color: var(--color-text-nd);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.finished__game-btn {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px var(--color-text);
+    border: 2px solid var(--color-text);
+    cursor: pointer;
+    transition: all 0.1s;
+    /* color: black; */
+    /* background: linear-gradient(90deg, rgba(9,121,121,1) 16%, rgba(10,212,231,1) 70%, rgba(21,207,166,1) 94%); */
+}
+
+.finished__game-btn:hover {
+    /* background-color: var(--color-text); */
+    color: black;
+    transform: scale(1.05);
+    border: none;
+    box-shadow: none;
+    /* box-shadow: 0 0 3px var(--color-text); */
+    background: linear-gradient(90deg, rgb(12, 179, 179) 4%, rgba(10,212,231,1) 92%);
+}
+
+.finished__game-title {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.finish__message {
+    font-size: 30px;
+}
+
+.displaySelection {
+    width: 30px;
+    height: auto;
+}
+
+.playerMove, .computerMove {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 5vh;
+}
+
+.description {
+    color: var(--color-text-nd);
+    font-size: 13px;
+    height: 24px;
+}
+
+.github {
+    transition: all 0.08s;
+    width: 24px;
+    height: 24px;
+}
+
+.github img{
+    width: 20px;
+    height: 20px;
+}
+
+.github:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+    .container__description {
+        font-size: 35px;
+    }
+
+    .container__images-item img{
+        width: 85px;
+        height: auto;
+    }
+
+    .player, .computer {
+        font-size: 19px;
+    }
+}
