@@ -1,3 +1,7 @@
-# rock-paper-scissors
+# Rock Paper Scissors
 
-[Live app] (https://franekdev.github.io/rock-paper-scissors/)
+## Online rock paper scissors game.
+
+## [Live app](https://franekdev.github.io/rock-paper-scissors/)
+
+Player vs Computer
